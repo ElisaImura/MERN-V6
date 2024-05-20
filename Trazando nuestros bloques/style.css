@@ -5,8 +5,7 @@ body{
     width: 950px;
     background-color: silver;
     margin: 0px auto;
-    display: flex;
-    flex-direction: column;
+    display: flow-root;
     padding: 25px;
 }
 .top-nav {
@@ -14,22 +13,19 @@ body{
     background-color: green;
     margin-bottom: 25px;
 }
-.content{
-    display: flex;
-    width: auto;
-}
 .side-nav {
     height: 300px;
     width: 200px;
     background-color: blue;
     margin-right: 30px;
+    float: left;
 }
 .main {
     height: 400px;
     width: 700px;
     background-color: red;
     padding: 10px;
-    display: inline-block;
+    float: right;
 }
 .sub-content {
     height: 200px;
