@@ -37,7 +37,7 @@ button:focus {
 #plus{
     background-color: #00D1B2;
     border: none;
-    border-radius: 100%;
+    border-radius: 50%;
     height: 25px;
     width: 25px;
     font-size: large;
