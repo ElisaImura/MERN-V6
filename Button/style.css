@@ -1,0 +1,62 @@
+.container{
+    margin: 30px;
+    
+}
+
+div{
+    margin: 10px;
+}
+
+button {
+    outline: none;
+    box-shadow: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:active,
+button:focus {
+    box-shadow: none;
+}
+
+#search{
+    background-color: #F5F5F5;
+    border: 1.5px solid #45B0B1;
+    color: #45B0B1;
+    font-weight: bolder;
+    width: 120px;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+#search:active{
+    background-color: #45B0B1;
+    border-color: #45B0B1;
+    color: #F5F5F5;
+}
+
+#plus{
+    background-color: #00D1B2;
+    border: none;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    font-size: large;
+    color: white;
+}
+
+#plus:active{
+    background-color:#78f1df;
+    color: white;
+}
+
+#create{
+    background-color: #2B78E4;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    color: white;
+    padding: 5px 30px;
+}
+
+#create:active{
+    box-shadow: none;
+}
