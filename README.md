@@ -9,3 +9,8 @@ TAREAS INCLUIDAS
 FUNDAMENTOS DE LA WEB (2021) PART- TIME ONLINE SPANISH
 - Estilo
 - Botón
+- Trazando Nuestros Bloques
+- Flexionar Nuestros Bloques
+- Bloques de Github
+- Barra de Navegacion con Flex
+- Columnas Flex-ibles
