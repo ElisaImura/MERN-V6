@@ -1,0 +1,41 @@
+.container{
+    margin: 70px;
+}
+
+.card-header{
+    background-color: #17A2B8;
+    padding: 40px;
+    display: flex;
+}
+
+.card-body{
+    padding: 20px;
+    border: #c6c6c6 solid;
+    border-top: none;
+}
+
+.user{
+    height: 70px;
+    margin-top: -50px;
+    border: #c6c6c6 solid;
+    border-radius: 50%;
+}
+
+.icon{
+    height: 15px;
+    margin-right: 8px;
+}
+
+h1{
+    margin: 0;
+}
+
+h3{
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
