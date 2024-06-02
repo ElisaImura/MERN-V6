@@ -1,0 +1,60 @@
+.btn{
+    background-color: #F5F5F5;
+    border: 1.5px solid #45B0B1;
+    color: #45B0B1;
+    font-weight: bolder;
+    width: 120px;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.btn:active{
+    background-color: #45B0B1;
+    border-color: #45B0B1;
+    color: #F5F5F5;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.col{
+    background-color: #649EA0;
+    color: white;
+    align-content: center;
+    padding: 20px;
+}
+
+.navbar{
+    background-color: #333333;
+    color: white;
+    margin: 0;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    height: 15px;
+    margin-right: 8px;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
+
+.card-body{
+    border: #c6c6c6 solid;
+    border-top: none;
+    padding: 10px;
+}
