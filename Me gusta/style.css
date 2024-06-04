@@ -1,0 +1,93 @@
+h3, h1{
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin: 0px 130px;
+}
+
+body h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.nav h1{
+    text-align: start;
+    margin: 10px;
+}
+
+.nav{
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+}
+
+img{
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user{
+    border: 3px black solid;
+    width: 100px;
+    height: 180px;
+    margin-right: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.user a{
+    margin-bottom: 20px;
+}
+
+.publications{
+    flex: 2;
+}
+
+.publication{
+    border: 3px black solid;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row p{
+    margin: 0px;
+    margin-right: 30px;
+}
+
+.card-body p{
+    margin-bottom: 0px;
+}
+
+.btn{
+    background-color: #FFD966;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.btn:active{
+    box-shadow: none;
+}
