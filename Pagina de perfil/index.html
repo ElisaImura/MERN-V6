@@ -16,8 +16,17 @@
             <li><a href="#">Inicio</a></li>
             <li><a href="#" class="active">My Profile</a></li>
             <li><a href="#">Encontrar conexiones</a></li>
+            <li>
+                <select id="pais" onchange="mostrarPais(this)">
+                    <option value="No seleccionado"> Selecciona el país </option>
+                    <option value="Paraguay"> Paraguay </option>
+                    <option value="México"> México </option>
+                    <option value="Peru"> Peru </option>
+                    <option value="Chile"> Chile </option>
+                </select>
+            </li>
         </ul>
-        <button class="btn">Cerrar sesión</button>
+        <button class="btn" onclick="cerrarSesion(this)">Sign Out</button>
     </div>
 
     <div class="content">
@@ -26,15 +35,15 @@
                 <div class="card-header"></div>
                 <div class="card-body">
                     <img class="user" src="./images/jane-m.jpg" alt="profile picture">
-                    <h1>Jane Doe</h1>
+                    <h1 id="userName">Jane Doe</h1>
                     <div class="row">
                         <img class="icon" src="./icons/map-marker.png" alt="map-marker icon">
-                        <h3>Seattle</h3>
+                        <h3 id="ciudad">Seattle</h3>
                     </div>
                     <p>Developer | Engineer | Problem Solver <br> Master of shadows and the Internet!</p>
                     <div class="row">
                         <img class="icon" src="./icons/gear.png" alt="gear icon">
-                        <a href="#">edit profile</a>
+                        <a href="#"  onclick="abrirModal(this)" >edit profile</a>
                     </div>
                 </div>
             </div>
@@ -54,7 +63,7 @@
             <div class="card" id="requests">
                 <div class="card-header">
                     <div class="circle">
-                        <p>2</p>
+                        <p id="num_req">2</p>
                     </div>
                     <h4>Connection Requests</h4>
                 </div>
@@ -65,8 +74,8 @@
                             <h5>Todd E</h5>
                         </div>
                         <div class="actions">
-                            <a href="."><img class="action-icon" src="./icons/accept-circle.png" alt="accept"></a>
-                            <a href="."><img class="action-icon" src="./icons/close-circle.png" alt="decline"></a>
+                            <a href="#" onclick="accept(this)"><img class="action-icon" src="./icons/accept-circle.png" alt="accept"></a>
+                            <a href="#" onclick="decline(this)"><img class="action-icon" src="./icons/close-circle.png" alt="decline"></a>
                         </div>
                     </div>
                     <div class="request">
@@ -75,8 +84,8 @@
                             <h5>Phil K</h5>
                         </div>
                         <div class="actions">
-                            <a href="."><img class="action-icon" src="./icons/accept-circle.png" alt="accept"></a>
-                            <a href="."><img class="action-icon" src="./icons/close-circle.png" alt="decline"></a>
+                            <a href="#" onclick="accept(this)"><img class="action-icon" src="./icons/accept-circle.png" alt="accept"></a>
+                            <a href="#" onclick="decline(this)"><img class="action-icon" src="./icons/close-circle.png" alt="decline"></a>
                         </div>
                     </div>
                 </div>
@@ -84,26 +93,26 @@
             <div class="card" id="connections">
                 <div class="card-header">
                     <div class="circle">
-                        <p>500+</p>
+                        <p id="num_con">500</p>
                     </div>
                     <h4>Your Connections</h4>
                 </div>
                 <div class="card-body">
                     <div class="connection row">
-                        <img class="profile-icon" src="./images/phil-s.jpg" alt="profile picture">
-                        <h5>Phil K</h5>
+                        <img class="profile-icon" src="./images/adrien-s.jpg" alt="profile picture">
+                        <h5>Adrien D</h5>
                     </div>
                     <div class="connection row">
-                        <img class="profile-icon" src="./images/phil-s.jpg" alt="profile picture">
-                        <h5>Phil K</h5>
+                        <img class="profile-icon" src="./images/anne-s.jpg" alt="profile picture">
+                        <h5>Anne J</h5>
                     </div>
                     <div class="connection row">
-                        <img class="profile-icon" src="./images/phil-s.jpg" alt="profile picture">
-                        <h5>Phil K</h5>
+                        <img class="profile-icon" src="./images/alayne-s.jpg" alt="profile picture">
+                        <h5>Alayne T</h5>
                     </div>
                     <div class="connection row">
-                        <img class="profile-icon" src="./images/phil-s.jpg" alt="profile picture">
-                        <h5>Phil K</h5>
+                        <img class="profile-icon" src="./images/arry-s.jpg" alt="profile picture">
+                        <h5>Arry Y</h5>
                     </div>
                 </div>
                 <div class="card-footer">
@@ -112,5 +121,24 @@
             </div>
         </div>
     </div>
+
+    <div class="card modal hidden">
+        <div class="card-header">Actualizar datos</div>
+        <div class="card-body">
+            <form onsubmit="actualizarDatos(event)">
+                <div>
+                    <label for="editar-nombre">Editar nombre:</label>
+                    <input type="text" id="editar-nombre" name="editar-nombre">
+                </div>
+                <div>
+                    <label for="editar-ciudad">Editar ciudad:</label>
+                    <input type="text" id="editar-ciudad" name="editar-ciudad">
+                </div>
+                <div class="error"></div>
+                <button class="btn"> Actualizar</button>
+            </form>
+        </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
